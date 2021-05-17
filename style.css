@@ -8,7 +8,7 @@ html {
 h1 {
 	font-family: sans-serif;
 	font-size: 2.5rem;
-	color: black;
+	color: rgb(21, 14, 61);
 	line-height: 1.125;
 	margin: 1rem;
 	letter-spacing: 0.4rem;
@@ -17,7 +17,7 @@ h1 {
 
 h2 {
 	font-family: sans-serif;
-	color: black;
+	color: rgb(21, 14, 61);
 	line-height: 1;
 	font-size: 2rem;
 	margin-bottom: 0.9rem;
@@ -27,7 +27,7 @@ h2 {
 
 h3 {
 	font-family: sans-serif;
-	color: black;
+	color: rgb(21, 14, 61);
 	line-height: 1.125;
 	font-size: 1.1rem;
 	margin-bottom: 0.8rem;
@@ -38,7 +38,7 @@ h3 {
 p {
 	font-family: sans-serif;
 	font-size: 0.8rem;
-	color: black;
+	color: rgb(21, 14, 61);
 	padding: 0 10%;
 }
 
@@ -62,6 +62,7 @@ iframe {
 header {
 	background-image: url(billeder/charlotte_reol.webp);
 	background-size: cover;
+	padding: 60px;
 }
 
 
@@ -115,50 +116,32 @@ iframe {
 
 /*______________________________________GALLERI SECTION__________________________________*/
 
-/*
 
-#galleri_section .section_wrapper {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+galleri_section {}
+
+/* #galleri_section .galleri_container {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 	gap: 20px;
-}
+} */
 
-#galleri_section img {
-	object-fit: cover;
-	height: 100%;
-}
-
-.image1 {
-	grid-column: 1 / 2;
-	grid-row: 1 / 3;
-}
-
-.image2 {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-}
-
-.image3 {
-	grid-column: 3 / 4;
-	grid-row: 1 / 3;
-}
-
-.image4 {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-*/
-
-galleri_section {
+#galleri_section .galleri_container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	gap: 1rem;
+ 	grid-template-rows: 300px 300px 300px;
+  	grid-template-columns: 300px 300px 300px;
 }
+
+.child-3,
+.child-5,
+.child-7 {
+  grid-column: span 2;
+}
+
 
 galleri_section img {
-	height: 100%;
-	object-fit: cover;
+object-fit: cover;
+height: 100%;
 }
 
 
@@ -167,19 +150,13 @@ galleri_section img {
 #holdet_section {
 		background-color: rgb(198, 215, 219);
 		padding: 40px;
-		}
+	}
 
-#holdet_section .section_wrapper {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
+#holdet_section .holdet_container {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 	gap: 20px;
-}
-
-#holdet_section img {
-	object-fit: cover;
-	height: 100%;
-
 }
 
 
