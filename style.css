@@ -70,6 +70,7 @@ header {
 #filmen_section {
 	display: grid;
 	justify-content: center;
+	padding: 30px;
 }
 
 /*
@@ -99,7 +100,10 @@ iframe {
 
 /*______________________________________HISTORIEN SECTION__________________________________*/
 
-#historien_section {}
+#historien_section {
+		background-color: rgb(198, 215, 219);
+		padding: 40px;
+}
 
 #historien_section blockquote {
 	font-family: sans-serif;
@@ -160,6 +164,10 @@ galleri_section img {
 
 /*______________________________________HOLDET SECTION__________________________________*/
 
+#holdet_section {
+		background-color: rgb(198, 215, 219);
+		padding: 40px;
+		}
 
 #holdet_section .section_wrapper {
 	display: grid;
@@ -236,7 +244,10 @@ galleri_section img {
 
 /*______________________________________GITHUB SECTION__________________________________*/
 
-#github_section {}
+#github_section {
+		background-color: rgb(198, 215, 219);
+		padding: 40px;
+}
 
 /*______________________________________ FOOTER __________________________________*/
 
