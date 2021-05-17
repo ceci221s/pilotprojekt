@@ -48,8 +48,8 @@ header p {
 	font-size: 0.7rem;
 }
 
+/*______________________________________VIDEO SECTION SOM ALTSÅ LIGE SKAL VÆRE HER__________________________________*/
 
-img,
 video,
 iframe {
 	width: 100%;
@@ -178,6 +178,61 @@ galleri_section img {
 /*______________________________________LAYOUT SECTION__________________________________*/
 
 #layout_section {}
+
+/* .boks-1 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-2 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-3 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-4 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-5 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-6 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-7 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-8 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+}
+
+.boks-9 {
+	outline: 2px solidcolor black;
+	outline-offset: 5px;
+	color: darkgray;
+} */
+
 
 /*______________________________________GITHUB SECTION__________________________________*/
 
