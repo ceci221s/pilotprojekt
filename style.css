@@ -1,0 +1,207 @@
+/*______________________________________ GENEREL __________________________________*/
+
+html {
+	margin: 0;
+}
+
+
+h1 {
+	font-family: sans-serif;
+	font-size: 2.5rem;
+	color: black;
+	line-height: 1.125;
+	margin: 1rem;
+	letter-spacing: 0.4rem;
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	color: black;
+	line-height: 1;
+	font-size: 2rem;
+	margin-bottom: 0.9rem;
+	letter-spacing: 0.3rem;
+	text-align: center;
+}
+
+h3 {
+	font-family: sans-serif;
+	color: black;
+	line-height: 1.125;
+	font-size: 1.1rem;
+	margin-bottom: 0.8rem;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	color: black;
+	padding: 0 10%;
+}
+
+header p {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+}
+
+
+img,
+video,
+iframe {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*______________________________________HEADER SECTION__________________________________*/
+
+header {
+	background-image: url(billeder/charlotte_reol.webp);
+	background-size: cover;
+}
+
+
+/*______________________________________FILMEN SECTION__________________________________*/
+
+#filmen_section {
+	display: grid;
+	justify-content: center;
+}
+
+/*
+FREMTIDEN
+
+iframe {
+	width: 100%;
+	height: auto;
+	aspect-ration: 16:9;
+}
+*/
+
+.iframe-wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+}
+
+iframe {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	width 100%;
+}
+
+
+/*______________________________________HISTORIEN SECTION__________________________________*/
+
+#historien_section {}
+
+#historien_section blockquote {
+	font-family: sans-serif;
+	font-size: 0.85rem;
+	font-style: italic;
+	padding: 0 13%;
+}
+
+
+/*______________________________________GALLERI SECTION__________________________________*/
+
+/*
+
+#galleri_section .section_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 20px;
+}
+
+#galleri_section img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.image1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.image2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.image3 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 3;
+}
+
+.image4 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+*/
+
+galleri_section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 1rem;
+}
+
+galleri_section img {
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*______________________________________HOLDET SECTION__________________________________*/
+
+
+#holdet_section .section_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	gap: 20px;
+}
+
+#holdet_section img {
+	object-fit: cover;
+	height: 100%;
+
+}
+
+
+/*______________________________________LAYOUT SECTION__________________________________*/
+
+#layout_section {}
+
+/*______________________________________GITHUB SECTION__________________________________*/
+
+#github_section {}
+
+/*______________________________________ FOOTER __________________________________*/
+
+footer p {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+}
+
+
+/*______________________________________ MEDIA QUERIES __________________________________*/
+
+@media (min-width: 600px) {
+	galleri_section {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px) {
+	galleri_section {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
